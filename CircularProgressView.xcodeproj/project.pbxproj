@@ -14,6 +14,7 @@
 		DE5096A81D8E6BE20002196A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5096A61D8E6BE20002196A /* LaunchScreen.storyboard */; };
 		DE5096B31D8E6BE20002196A /* CircularProgressViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5096B21D8E6BE20002196A /* CircularProgressViewTests.swift */; };
 		DE5096BE1D8E6BE20002196A /* CircularProgressViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5096BD1D8E6BE20002196A /* CircularProgressViewUITests.swift */; };
+		DE5096CD1D8E6C430002196A /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5096CC1D8E6C430002196A /* ProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		DE5096B91D8E6BE20002196A /* CircularProgressViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircularProgressViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5096BD1D8E6BE20002196A /* CircularProgressViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressViewUITests.swift; sourceTree = "<group>"; };
 		DE5096BF1D8E6BE20002196A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5096CC1D8E6C430002196A /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressView.swift; path = View/ProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +99,10 @@
 		DE50969C1D8E6BE20002196A /* CircularProgressView */ = {
 			isa = PBXGroup;
 			children = (
-				DE50969D1D8E6BE20002196A /* AppDelegate.swift */,
-				DE50969F1D8E6BE20002196A /* ViewController.swift */,
 				DE5096A11D8E6BE20002196A /* Main.storyboard */,
-				DE5096A41D8E6BE20002196A /* Assets.xcassets */,
-				DE5096A61D8E6BE20002196A /* LaunchScreen.storyboard */,
-				DE5096A91D8E6BE20002196A /* Info.plist */,
+				DE5096CF1D8E6D430002196A /* Controller */,
+				DE5096CE1D8E6D2C0002196A /* Root */,
+				DE5096CB1D8E6BEC0002196A /* View */,
 			);
 			path = CircularProgressView;
 			sourceTree = "<group>";
@@ -123,6 +123,33 @@
 				DE5096BF1D8E6BE20002196A /* Info.plist */,
 			);
 			path = CircularProgressViewUITests;
+			sourceTree = "<group>";
+		};
+		DE5096CB1D8E6BEC0002196A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE5096CC1D8E6C430002196A /* ProgressView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DE5096CE1D8E6D2C0002196A /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				DE50969D1D8E6BE20002196A /* AppDelegate.swift */,
+				DE5096A41D8E6BE20002196A /* Assets.xcassets */,
+				DE5096A61D8E6BE20002196A /* LaunchScreen.storyboard */,
+				DE5096A91D8E6BE20002196A /* Info.plist */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		DE5096CF1D8E6D430002196A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE50969F1D8E6BE20002196A /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +288,7 @@
 			files = (
 				DE5096A01D8E6BE20002196A /* ViewController.swift in Sources */,
 				DE50969E1D8E6BE20002196A /* AppDelegate.swift in Sources */,
+				DE5096CD1D8E6C430002196A /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
